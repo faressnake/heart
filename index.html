@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="1.gif"
+        <meta charset="UTF-8">
+        <title> Heart beats for u...</title>
+        <style>
+body{
+    background-color: black;
+}
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        color: white;
+        text-align: center;
+        font-family: cursive;
+        font-size: 4em;
+        color: transparent;
+        animation: effect 0.8s linear infinite;
+    }
+
+    @keyframes effect {
+        0% {
+            background: linear-gradient(
+    white, red);
+    -webkit-background-clip: text;
+        }
+    }
+    .human-heart{
+        margin: 5em;
+        -webkit-animation: 0.8s infinite beatHeart;
+        -webkit-animation: 0.8s infinite beatHeart;
+    }
+
+    @-webkit-keyframes beatHeart {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.1 );
+        }
+        40% {
+            transform: scale(1);
+        }
+        60% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes beatHeart {
+        0% {
+            transform: scale(1);
+        }
+        25% {
+            transform: scale(1.1 );
+        }
+        40% {
+            transform: scale(1);
+        }
+        60% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+        </style>
+    </head>
+    <body>
+        <div class="container" >
+            <img src="1.gif" class="human-heart" alt="human-heart">
+        </div>
+        <div>
+            <h1>its beats for u...A?</h1>
+        </div>
+    </body>
+</html>
